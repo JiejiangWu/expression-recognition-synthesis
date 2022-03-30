@@ -1,0 +1,18 @@
+eid: expression-recongnition-fer2013
+dataset: fer2013
+#### log
+#iteration
+print_freq: 100 
+#epoch
+checkpoint_freq: 1
+
+### optimizer
+lr: !!float 1e-4
+batch_size: 16
+decay_epoch: 2
+decay_rate: 0.5
+early_stop_epoch: 4
+epoches: 30
+
+### augumentaion
+augmentation: False

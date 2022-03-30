@@ -1,0 +1,31 @@
+eid: expression-synthesis-fer2013
+dataset: fer2013
+
+
+### hyper-parameter
+model_type: modified
+d_lr: !!float 1e-4
+g_lr: !!float 1e-4
+d_bottleneck_num: 6
+g_bottleneck_num: 6
+image_size: 64
+c_dim: 7
+
+
+### training
+batch_size: 32
+epoches: 200
+decay_begin_epoch: 100
+decay_step_epoch: 40
+decay_rate: 0.5
+lambda_classify: 1
+lambda_gp: 10
+lambda_rec: 10
+D_G_step: 5
+
+#### log
+#iteration
+print_freq: 100 
+demo_freq: 400
+#epoch
+checkpoint_freq: 5

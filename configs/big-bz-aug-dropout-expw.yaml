@@ -1,0 +1,19 @@
+eid: expression-recongnition-expw-aug-dropout-bz
+dataset: expw
+#### log
+#iteration
+print_freq: 100 
+#epoch
+checkpoint_freq: 1
+
+### optimizer
+lr: !!float 8e-4
+batch_size: 128
+decay_epoch: 5
+decay_rate: 0.5
+early_stop_epoch: 15
+epoches: 100
+
+### augumentaion
+augmentation: True
+dropout: True
